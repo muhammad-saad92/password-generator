@@ -30,10 +30,10 @@ function App() {
     }, [length, numberAllowed, charAllowed, passwordGenerator]);
 
     return (
-        <div className="min-h-screen bg-gray-900 flex items-center justify-center px-4">
-            <div className="w-full max-w-lg bg-gray-800 shadow-xl rounded-2xl p-6 text-gray-100">
+        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center px-4">
+            <div className="w-full max-w-lg bg-gray-800/90 backdrop-blur-xl shadow-2xl rounded-2xl p-6 text-gray-100 border border-gray-700/50">
                 
-                <h1 className="text-3xl font-bold text-center mb-6 text-orange-400">
+                <h1 className="text-4xl font-serif tracking-wide font-bold text-center mb-8 text-orange-400">
                     Password Generator
                 </h1>
 
@@ -55,7 +55,7 @@ function App() {
                 </div>
 
                 {/* Controls */}
-                <div className="space-y-4">
+                <div className="space-y-6">
 
                     {/* Length Slider */}
                     <div className="flex items-center justify-between">
@@ -66,7 +66,7 @@ function App() {
                             max={40} 
                             value={length}
                             onChange={(e) => setLength(e.target.value)}
-                            className="w-2/3 cursor-pointer accent-orange-500"
+                            className="w-2/3 cursor-pointer accent-orange-500 focus:shadow-lg "
                         />
                     </div>
 
